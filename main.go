@@ -8,11 +8,22 @@ import (
 
 func main() {
 	// defaultGitConfig := ".gitconfig"
+	// var input string
 
 	// createFile(defaultGitConfig)
 	// writeToFile(defaultGitConfig, "test")
 	// fileExists := doesFileExist("test")
 	// fmt.Println(fileExists)
+
+	// if doesFileExist(defaultGitConfig) {
+	// 	log.Fatal("not implemented")
+	// }
+
+	// fmt.Print("Do you want to create a multi-account config? (y/n): ")
+	// fmt.Scan(&input)
+	// // fmt.Print("\n")
+	// fmt.Println(input)
+
 }
 
 func createFile(name string) {
