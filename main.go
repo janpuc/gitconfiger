@@ -7,7 +7,10 @@ import (
 )
 
 func main() {
-	createFile(".gitconfig")
+	defaultGitConfig := ".gitconfig"
+
+	createFile(defaultGitConfig)
+	writeToFile(defaultGitConfig, "test")
 }
 
 func createFile(name string) {
@@ -17,4 +20,15 @@ func createFile(name string) {
 	}
 	fmt.Println("File created")
 	defer file.Close()
+}
+
+func writeToFile(name string, body string) {
+	file, err := os.OpenFile(name, os.O_RDWR, os.ModeAppend)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	file.WriteString(body)
+	fmt.Println("File written to")
 }
