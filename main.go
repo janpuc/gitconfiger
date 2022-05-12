@@ -7,10 +7,12 @@ import (
 )
 
 func main() {
-	defaultGitConfig := ".gitconfig"
+	// defaultGitConfig := ".gitconfig"
 
-	createFile(defaultGitConfig)
-	writeToFile(defaultGitConfig, "test")
+	// createFile(defaultGitConfig)
+	// writeToFile(defaultGitConfig, "test")
+	// fileExists := doesFileExist("test")
+	// fmt.Println(fileExists)
 }
 
 func createFile(name string) {
