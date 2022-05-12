@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	createFile("test")
+	createFile(".gitconfig")
 }
 
 func createFile(name string) {

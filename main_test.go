@@ -6,7 +6,7 @@ import (
 )
 
 func TestCreateFile(t *testing.T) {
-	testFile := "test"
+	testFile := "test.txt"
 
 	createFile(testFile)
 	_, err := os.Stat(testFile)
